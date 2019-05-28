@@ -1,0 +1,14 @@
+<h3>Edit user</h3>
+<div>
+  Search user by ID: <input [(ngModel)]="id" placeholder="user id">
+  <input (click)="onSearch(id)" type="button" value="search">
+</div>
+<form *ngIf="user" class="form-group">
+    <div>
+      New username: <input [(ngModel)]="user.name" placeholder="username" name="name">
+    </div>
+    <div>
+      New password: <input [(ngModel)]="user.pass" placeholder="password" type="password" name="pass">
+    </div>
+    <input (click)="onEdit(id, user)" type="button" value="edit">
+  </form>

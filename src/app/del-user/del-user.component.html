@@ -1,0 +1,11 @@
+<h3>Delete your user!</h3>
+<div>
+    Search user by ID <input [(ngModel)]="id" placeholder="user id">
+    <input (click)="onSearch(id)" type="button" value="search">
+    <div *ngIf="user">
+        User ID: {{user.id}}
+        <br>
+        User NAME: {{user.name}}
+        <input (click)="onDelete(id)" type="button" value="delete">
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<h3>Create a new user</h3>
+<form class="form-group">
+  <div>
+    Username: <input [(ngModel)]="user.name" type="username" placeholder="username" name="name">
+  </div>
+  <div>
+    password: <input [(ngModel)]="user.pass" type="password" placeholder="password" name="pass">
+  </div>
+  <input (click)="onCreate()" type="button" value="create">
+</form>
